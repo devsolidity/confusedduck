@@ -7,13 +7,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-
+  
 <style>
 #chart {
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center; /* tengah horizontal */
+  align-items: center;
+}
+
+.chart-container iframe {
+  width: 90%;       /* lebar */
+  max-width: 900px; /* batas max */
+  height: 500px;    /* tinggi */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,255,150,0.3);
 }
 
 #chart iframe {
