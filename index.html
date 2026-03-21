@@ -318,23 +318,26 @@ position:absolute;
 font-size:30px;
 cursor:pointer;
 }
-.community-section {
-  display: flex;
-  justify-content: center;
-  align-items: stretch; 
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-.tweet-box {
-  flex: 1;
-  max-width: 350px;
-  min-height: 250px; 
-  background: #111;
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
+.community {
+  margin-top: 120px;
   text-align: center;
+}
+
+.tweet-wrapper {
+  display: flex;
+  justify-content: center;  /* center semua kolom */
+  gap: 20px;
+  flex-wrap: wrap;          /* biar rapi di HP */
+  margin-top: 30px;
+}
+
+.tweet-box {
+  background: #0f172a;
+  width: 300px;
+  min-height: 150px;        /* biar sama tinggi */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
 }
 .tweet-box iframe {
   height: 100% !important;
@@ -1103,21 +1106,29 @@ document.getElementById("tweetText").innerText=t
 
 </script>
 
-
 <!-- COMMUNITY TWEET PREVIEW -->
+<div class="community">
 
-<div style="margin-top:120px;text-align:center;">
+  <h2>Community Tweets</h2>
 
-<h2>Community Tweets</h2>
+  <div class="tweet-wrapper">
 
-<div
-style="background:#0f172a;width:320px;margin:auto;padding:20px;border-radius:10px;">
+    <div class="tweet-box">
+      <p>@ducktrader</p>
+      <p>$KWEK might be the most confusing coin ever 🦆</p>
+    </div>
 
-<p>@ducktrader</p>
+    <div class="tweet-box">
+      <p>@ducktrader</p>
+      <p>This coin is going crazy 🚀</p>
+    </div>
 
-<p>$KWEK might be the most confusing coin ever 🦆</p>
+    <div class="tweet-box">
+      <p>@ducktrader</p>
+      <p>Early holders will win 💰</p>
+    </div>
 
-</div>
+  </div>
 
 <style>
   #mainLogo {
