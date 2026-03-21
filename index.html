@@ -243,7 +243,7 @@ margin-top:40px;
 }
 .livechart{
 width:60%;
-height:200px;
+height:300px;
 border:none;
 border-radius:10px;
 }
@@ -259,8 +259,8 @@ display:inline-block;
 cursor:pointer;
 }
 .social-btn{
-background:#facc15;   /* warna kuning tema */
-color:#000000;        /* tulisan hitam */
+background:#facc15;
+color:#000000;
 padding:14px 24px;
 border-radius:12px;
 text-decoration:none;
@@ -318,6 +318,28 @@ position:absolute;
 font-size:30px;
 cursor:pointer;
 }
+.community-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; 
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.tweet-box {
+  flex: 1;
+  max-width: 350px;
+  min-height: 250px; 
+  background: #111;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+.tweet-box iframe {
+  height: 100% !important;
+}
+
 
 /* footer */
 
@@ -330,24 +352,7 @@ color:#6b7280;
 
 </style>
 <style>
-.duck-section {
-  display: flex;
-  justify-content: center; /* posisi tengah */
-  gap: 20px;
-  flex-wrap: wrap; /* biar responsive di HP */
-}
 
-.duck-box {
-  flex: 1;                /* semua sama besar */
-  max-width: 300px;       /* batas lebar */
-  min-height: 200px;      /* tinggi sama */
-  background: #111;
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-}
-</style>
 </head>
 
 <body>
