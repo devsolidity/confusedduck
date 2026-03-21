@@ -393,7 +393,6 @@ Even the duck doesn't understand it.
 </p>
 
 <div class="btn" onclick="buyNow()">🚀 BUY NOW</div>
-
 </section>
 
 <section id="philosophy" class="section">
@@ -2536,19 +2535,16 @@ btn.innerText="Read Full Whitepaper"
 
 </script>
 <script>
-function launchRocket() {
-  alert("🚀 To The Moon!"); // efek sementara
-}
-
 function buyNow() {
-  launchRocket();
+  // optional animasi
+  console.log("clicked");
 
+  // redirect (lebih aman dari popup block)
   setTimeout(() => {
-    window.open("https://pump.fun/f5hdhxCF4WuoFpR19uHTSF9WqFo44B295zF122Tpump", "_blank");
-  }, 500);
+    window.location.href = "https://pump.fun/f5hdhxCF4WuoFpR19uHTSF9WqFo44B295zF122Tpump";
+  }, 300);
 }
 </script>
-
 </body>
 <footer>
 
